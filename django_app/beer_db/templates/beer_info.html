@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+
+
+{% block main %}
+<!-- Modal -->
+
+<div class="body2">
+		<div class="container2 cont3" style="height: 1240px">
+			<div class="bubbles">
+				<span style ="--i:11;"></span>
+				<span style ="--i:23;"></span>
+				<span style ="--i:3;"></span>
+				<span style ="--i:19;"></span>
+				<span style ="--i:17;"></span>
+				<span style ="--i:12;"></span>
+				<span style ="--i:6;"></span>
+				<span style ="--i:7;"></span>
+				<span style ="--i:15;"></span>
+				<span style ="--i:13;"></span>
+				<span style ="--i:5;"></span>
+				<span style ="--i:11;"></span>
+				<span style ="--i:23;"></span>
+				<span style ="--i:3;"></span>
+				<span style ="--i:19;"></span>
+				<span style ="--i:17;"></span>
+
+		</div>
+	<div>
+
+	<div>
+		<div class="center-register center-pred3" style="width:60vw;margin-top: -100px; margin-bottom: -30px;">
+			<div>
+				<h5 class="beer-name">{{Beer.Name}}</h5>
+				
+			</div>
+			<div id="container1" >
+				<div>
+					{% for keyword, value in Table %}
+						<h3 class="smaller" style="margin-left: 10px; margin-right:10px; font-size: 1em">{{keyword}}:  {{value}}</h3>
+					{% endfor %}
+				</div>
+			</div>
+			<form action="../" id="info-form" method="get">
+				<div>
+					<button type="submit" class="btn-submit-register" data-dismiss="modal">Close</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- </div> -->
+{% endblock %}

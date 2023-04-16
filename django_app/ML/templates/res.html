@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="body2">
+		<div class="container2 cont5">
+			<div class="bubbles">
+				<span style ="--i:12;"></span>
+				<span style ="--i:6;"></span>
+				<span style ="--i:11;"></span>
+				<span style ="--i:23;"></span>
+				<span style ="--i:3;"></span>
+				<span style ="--i:19;"></span>
+				<span style ="--i:17;"></span>
+				<span style ="--i:12;"></span>
+				<span style ="--i:6;"></span>
+				<span style ="--i:7;"></span>
+				<span style ="--i:15;"></span>
+				<span style ="--i:13;"></span>
+				<span style ="--i:5;"></span>
+				<span style ="--i:15;"></span>
+				<span style ="--i:13;"></span>
+				<span style ="--i:5;"></span>
+				<span style ="--i:11;"></span>
+				<span style ="--i:23;"></span>
+				<span style ="--i:3;"></span>
+				
+	</div>
+<div>
+    <div class="body2">
+        <div class="center-register center-pred2" style="margin-top: -150px; margin-bottom: -30px;">
+            <div>
+                <h1 class="beer-name">Result </h1>
+                <h1 class="beer-name ok-no-border">{{Ave_Rating}}</h1>
+				<form action="/rating" method="get">
+					<button formaction="/rating" type="submit" class="btn-submit-register">Close</button>
+				</form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+{% endblock %}

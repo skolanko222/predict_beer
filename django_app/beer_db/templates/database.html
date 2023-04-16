@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div style="background: #0c192c;">
+{% for beer in Beers %}
+	<div>
+	    <div>
+	        <div>
+	            <div class="margin1" style="font-size:0.5em">
+	                <h5 class="beer-name beer-name-large" style="width:90vw; margin-left:5vw; color: white">{{beer.Name}}</h5>
+
+	            </div>
+	            <div>
+
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	    <div>
+	            <form action="./{{forloop.counter}}/" id="info-form" method="get">
+					<button type="submit" value="Submit" class="btn-submit-register" style="margin-bottom:30px; width: 30vw; margin-left:35vw; color: black; background: white" >more info</button>
+					<div style="border-bottom: 1px solid white; margin-left: 35vw; width: 30vw; margin-bottom: 10px"></div>
+				</form>
+	    </div>
+{% endfor %}
+{% endblock %}
+	</div>
+</div>

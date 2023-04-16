@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="body2">
+		<div class="container2 cont3"  style="height: 1240px">
+			<div class="bubbles">
+				<span style ="--i:12;"></span>
+				<span style ="--i:6;"></span>
+				<span style ="--i:11;"></span>
+				<span style ="--i:23;"></span>
+				<span style ="--i:3;"></span>
+				<span style ="--i:19;"></span>
+				<span style ="--i:17;"></span>
+				<span style ="--i:12;"></span>
+				<span style ="--i:6;"></span>
+				<span style ="--i:7;"></span>
+				<span style ="--i:15;"></span>
+				<span style ="--i:13;"></span>
+				<span style ="--i:5;"></span>
+				<span style ="--i:15;"></span>
+				<span style ="--i:13;"></span>
+				<span style ="--i:5;"></span>
+				<span style ="--i:11;"></span>
+				<span style ="--i:23;"></span>
+				<span style ="--i:3;"></span>
+				<span style ="--i:19;"></span>
+	</div>
+<div>
+    <div>
+        <div class="center-register center-pred2" style="margin-top: -200px; margin-bottom: -30px;">
+            <h2 class="beer-name">Beer prediction</h2>
+				<ul >
+					{% for k, v in data.items %}
+						<li style="border-bottom:none; font-size:1em">{{ k }}:  {{ v }}</li>
+						<br>
+					{% endfor %}
+					
+				</ul>
+				<h2 class="beer-name">Fitting beer: {{ beer }} no {{ index }} </h2>
+				<form action="/predict" method="get">
+					<button formaction="/predict" type="submit" class="btn-submit-register">Close</button>
+				</form>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

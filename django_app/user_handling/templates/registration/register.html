@@ -1,0 +1,60 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Register</title>
+    </head>
+    
+    <body>
+        <div class="screen-width">
+        <div class="container2">
+            <div class="bubbles">
+                <span style ="--i:11;"></span>
+                <span style ="--i:23;"></span>
+                <span style ="--i:3;"></span>
+                <span style ="--i:19;"></span>
+                <span style ="--i:17;"></span>
+                <span style ="--i:12;"></span>
+                <span style ="--i:6;"></span>
+                <span style ="--i:7;"></span>
+                <span style ="--i:15;"></span>
+                <span style ="--i:13;"></span>
+                <span style ="--i:5;"></span>
+                <span style ="--i:11;"></span>
+                <span style ="--i:23;"></span>
+                <span style ="--i:3;"></span>
+                <span style ="--i:19;"></span>
+                <span style ="--i:17;"></span>
+                <span style ="--i:12;"></span>
+
+
+            </div>
+        </div>
+                <div class="body">
+                    <div class="center-register">
+                        <h1>Registration</h1>
+                        <form method="post" action="{% url 'users:registration' %}">
+                            {% csrf_token %}
+                            <div class="txt_field">
+                                <input type="text" id="username" name="username" required>
+                                <span></span>
+                                <label for="username">Username</label>
+                            </div>
+                            <div class="txt_field">
+                                <input type="password" id="password" name="password" required>
+                                <span></span>
+                                <label for="password">Password</label>
+                            </div>
+                            <button type="submit" class="btn-submit-register">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>
+    <!-- Bootstrap CSS -->
+   
+</html>
+
